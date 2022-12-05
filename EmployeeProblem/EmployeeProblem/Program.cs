@@ -15,8 +15,7 @@ namespace EmployeeProblem
             {
                 Console.WriteLine("Choose the option to perform the operation:-  1) Attendance \n 2) Employee Wage \n 3) Employee Status of working\n " +
                      "4) Switch \n 5) Monthly Salary \n" +
-                    " 6) QueRem \n 7) Swapping \n 8) EvenOdd \n 9) Alphabet \n 10)Largest no\n" +
-                    "Enter the no to operate: \n");
+                    " 6) total working hours or days is reached for a month \n 7) Exit \n ");
                 int option = Convert.ToInt32(Console.ReadLine());
 
                 switch (option)
@@ -41,7 +40,13 @@ namespace EmployeeProblem
                         Monthly monthly = new Monthly();
                         monthly.Salary();
                         break;
-
+                    case 6:
+                        Condition condition = new Condition();
+                        condition.Wage();
+                        break;
+                    case 7:
+                        flag = false;
+                        break;
 
                 }
             }
