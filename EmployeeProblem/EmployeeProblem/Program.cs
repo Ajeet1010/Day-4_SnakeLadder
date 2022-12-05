@@ -24,7 +24,10 @@ namespace EmployeeProblem
                         Attendance attendance = new Attendance();
                         attendance.Preabs();
                         break;
-
+                    case 2:
+                        Wage wage = new Wage();
+                        wage.Salary();
+                        break;
                 }
             }
         }
