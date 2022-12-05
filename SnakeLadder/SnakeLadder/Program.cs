@@ -13,12 +13,13 @@ namespace SnakeLadder
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Choose the option to perform the operation:-  1) Start \n 2) Outcome after roll \n 3) \n4)  \n 5)  \n" +
+                Console.WriteLine("Choose the option to perform the operation:-  1) Start \n 2) Outcome after roll \n 3) Checks for options \n" +
+                    "4)  \n 5)  \n" +
                         " 6)  \n 7)  \n " +
                         "Enter the no to operate: ");
-                int option = Convert.ToInt32(Console.ReadLine());
+                int options = Convert.ToInt32(Console.ReadLine());
 
-                switch (option)
+                switch (options)
                 {
                     case 1:
                         Start start = new Start();
@@ -28,6 +29,11 @@ namespace SnakeLadder
                         Roll roll= new Roll();
                         roll.Outcome();
                         break;
+                    case 3:
+                        Option option = new Option();
+                        option.Check();
+                        break;
+
 
 
                 }
